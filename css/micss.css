@@ -1,0 +1,238 @@
+*,
+*::after
+*::before{
+    margin:0; 
+    padding:0;
+    top:0;
+    box-sizing: border-box;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
+/* @import url(https://allfont.es/allfont.css?fonts=bebas-neue);
+@import url(https://allfont.es/allfont.css?fonts=bowlby-one-sc); */
+
+.header{
+    background-color: #6c3483;
+    height: auto;
+    position: fixed; /* Hacemos que la cabecera tenga una posición*/
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; 
+	top: 0; 
+}
+
+.headerGrid{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(70px, auto);
+}
+
+.logo {
+        grid-column: 1/ 4;
+        grid-row: 1;
+      }
+.texto {
+        grid-column: 4 /10;
+        grid-row: 1 ;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        color: #F5F5F5;
+      }
+
+.carrito {
+    grid-column: 11/12;
+    grid-row: 1 ;
+      }
+
+.whatsApp{
+    grid-column: 12/13;
+    grid-row: 1 ;
+      }
+   
+.img{
+    padding: 1rem;
+}
+
+
+.subtitulo{
+    font-family: 'bebas-neue', sans-serif;
+    font-size: 1rem;
+    color: #F5F5F5;
+    background-color: #E9967A;
+}
+
+nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+    } 
+    nav ul{
+        padding: 0px 0px 0px 10px;
+        margin: 10px 0px 5px 0px;
+    
+    }
+    nav li{
+    display:inline-block;
+    width:10%;
+    padding:5px 10px;
+    background-color: #E9967A;
+    border:1px solid #E9967A;
+    text-align:center;
+    color:#fff;
+    }
+    nav li:hover{
+    background-color:#fff;
+    color:#000;
+    }
+
+
+   /* //////////  Coleccion card  */
+
+body {
+    font-family: Arial;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.flexColumna{
+    /*a*/
+    /*b*/
+    display: flex;
+    flex-direction: column; 
+    padding: 0px;
+    flex-wrap: wrap;
+    /* justify-content:space-around */
+}
+
+.flexRow{
+    /*a - b - c */
+    display: flex;
+    flex-direction: row; 
+    padding: 5px 5px 5px 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content:space-around */
+}
+
+
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: #c1bec2;
+    margin-left: 30px;
+}
+
+.card {
+    width: 25%;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid #c0c0c0;
+    border-radius: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.cardImg {
+    width: 100%;
+}
+
+.cardPrice {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    
+}
+
+   .button {
+    margin: 10px 0;
+    background-color: #2271b3;
+    color: rgb(247, 247, 247);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color:#0096d2;
+    box-shadow: 1px 1px 10px lightgrey;
+}
+
+.BtoDetcar {
+    margin: 10px 0;
+    background-color: #2271b3;
+    color: rgb(247, 247, 247);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.BtoDetcar:hover {
+    background-color:#0096d2;
+    box-shadow: 1px 1px 10px lightgrey;
+}
+
+.DatosCarrito {
+   
+    font-family: 'Montserrat', sans-serif;
+    /* font-size: 1rem; */
+    color: #ffff;
+    font-weight: bold;
+    /* padding: 5px; */
+    margin: 2px 0px 2px 0px;
+    background-color: grey;
+    font-size: 20px;
+    font-weight: 600;
+    
+  }
+
+
+  .modal-container{
+    display: flex;
+    background-color: grey;
+    align-items: center;
+    justify-content:center;
+    pointer-events: none;
+    margin: 0px 0px ;
+    height: 100vh;
+    width: 100vh;
+  }
+
+  .modal{
+    background-color: #c0c0c0; ;
+    border-radius: 1ch;
+    box-shadow: 0 1px 1px ;
+    text-align: center;
+
+  }
+
+ .modal-container{
+    display: none;
+    align-items: center;
+    align-content: center;
+
+  } 
+
+  .Btopopup{
+    margin: 5px 0;
+    background-color: #2271b3;
+    color: rgb(247, 247, 247);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Btopopup:hover {
+    background-color:#0096d2;
+    box-shadow: 1px 1px 10px lightgrey;
+}

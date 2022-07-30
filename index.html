@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="./css/micss.css">
+</head>
+<body class="body">
+ 
+<header class="header">
+    <div class="headerGrid">
+        <div class="logo">
+            <picture>
+             <img class="img" src="./imagen/logo.png" alt="" width="120px" height="40px" >  
+            </picture>
+        </div>
+        <div class="texto">
+           <ul>
+            <li>Contacto: +54-1126135481</li>
+            <li>Envio: 2 a 5 dias habiles.</li>
+          </ul>
+        </div>
+        <div class="whatsApp">
+            <a href="https://example.url.com">
+                <picture>
+                    <img class="img" src="./imagen/whatsApp.png" alt="" width="40px" height="40px" >  
+                </picture>
+              </a>
+        </div>
+        <div class="carrito">
+            <a href="https://example.url.com">
+                <picture>
+                <img class="img" src="./imagen/carrito.png" alt="" width="40px" height="40px" >  
+                </picture>
+           </a>
+        </div> 
+    </div>
+    <div class="subtitulo">
+        <nav>
+            <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Quienes somos</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Ofertas</a></li>
+           </ul>
+        </nav>
+    </div>
+</header>
+   
+    <div style=" height: 50px; margin-top: 70px;" >
+        <h1 style="color: #000;">JavaScript</h1>
+    </div> 
+    <div class="flexRow">
+        <div class="flexColumna" style="width:20%">
+            <div><p style="background-color:#6c3483; color: #ffffff; padding:15px" >Puños</p></div>     
+            <div><img src="./imagen/puyos.png" class="cardImg"></div>
+            <div><p style="background-color:#6c3483; color: #ffffff;padding:5px" >Cuellos</p></div>     
+            <div><img src="./imagen/Cuellos.png" class="cardImg"></div>
+        </div>
+        <div style="width: 60%"> 
+            <p style="background-color:#6c3483;color: #ffffff;padding:15px">Colección Verano</p>
+            <div id="cardContainer" class="flexRow">
+                <!-- Codigo inyectado desde JS -->
+            </div> 
+        </div>
+     
+        <div class="flexColumna" style="width:20%;">
+            <div><p style="background-color:#6c3483; color: #ffffff; padding:15px" >Tallas</p></div>  
+           <div style="margin-top: 40px"><img src="./imagen/Size.png" class="cardImg"></div>  
+           <div style="margin-top: 30px"><p style="background-color:#6c3483; color: #ffffff; padding:5px" >Carrito de compras</p></div>
+           <div class="DatosCarrito">Total :
+            <span id="totalCarrito">0</span>
+            </div>
+           <div class="DatosCarrito">Item :
+            <span id="itemCarrito">0</span>
+           </div> 
+           <div style="margin-top:10px">
+           <button id="BtoDetalleCarrito" class="BtoDetcar" style=" padding: 10px 50px;">Detalle Carrito</button>
+           </div>
+           <div style="margin-top:10px">
+            <button id="BtoClear" class="BtoDetcar" style=" padding: 10px 50px;">Limpiar Carrito</button>
+            </div>
+           <div style="margin-top:10px">
+            <button id="BtoPop" class="BtoDetcar" style=" padding: 10px 50px;">Realizar Compra</button>
+            </div>
+           <div id="HtmldetalleCarrito" class="flexRow">
+            <!-- Codigo inyectado desde JS -->
+           </div> 
+        </div>
+        
+       
+    </div>
+
+    <div style="padding: 10px; text-align: center;">
+        <h3 style="color: #BBBBBB; font-size: 0.7rem; font-family: Arial">| </h3>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
